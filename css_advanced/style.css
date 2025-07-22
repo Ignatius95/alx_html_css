@@ -182,5 +182,86 @@ main section:nth-of-type(2) p {
   }
 }
 
+/*==============================Most Popular Section=================*/
+
+section:nth-of-type(3) {
+  background-color: #fff;
+  padding: 80px 60px;
+  text-align: center;
+}
+
+section:nth-of-type(3) > h2 {
+  font-size: 32px;
+  font-weight: 300;
+  margin-bottom: 60px;
+  color: #071629;
+}
+
+section:nth-of-type(3) > div {
+  display: inline-block;
+  width: 260px;
+  margin: 0 15px 40px;
+  vertical-align: top;
+  text-align: left;
+  position: relative;
+}
+
+/* Thumbnail image */
+section:nth-of-type(3) > div > img:first-of-type {
+  width: 100%;
+  border-radius: 4px;
+  display: block;
+}
+
+/* Title */
+section:nth-of-type(3) > div > h3 {
+  font-size: 16px;
+  color: #071629;
+  margin: 20px 0 10px;
+}
+
+/* Description */
+section:nth-of-type(3) > div > p:first-of-type {
+  font-size: 14px;
+  color: #071629;
+  opacity: 0.6;
+  margin-bottom: 15px;
+}
+
+/* Author */
+section:nth-of-type(3) > div > div:nth-of-type(1) {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+section:nth-of-type(3) > div > div:nth-of-type(1) img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+section:nth-of-type(3) > div > div:nth-of-type(1) h4 {
+  font-size: 14px;
+  color: #C271FF;
+  font-weight: bold;
+}
+
+/* Stars */
+section:nth-of-type(3) > div > div:nth-of-type(2) {
+  color: #C271FF;
+  display: flex;
+  gap: 3px;
+  margin-bottom: 10px;
+}
+
+/* Duration */
+section:nth-of-type(3) > div > p:last-of-type {
+  font-size: 14px;
+  color: #C271FF;
+  text-align: right;
+}
+
 
 
