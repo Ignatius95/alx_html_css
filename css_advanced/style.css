@@ -125,3 +125,62 @@ main section:first-of-type p {
     font-size: 14px;
     opacity: 0.7;
 }
+
+/*==================== Testimonial Section ====================*/
+
+main section:nth-of-type(2) {
+  background-color: #C271FF;
+  color: white;
+  padding: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+main section:nth-of-type(2) > div:first-child img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+main section:nth-of-type(2) > div:last-child {
+  max-width: 600px;
+}
+
+main section:nth-of-type(2) blockquote {
+  font-size: 20px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  font-weight: 300;
+  color: white;
+}
+
+main section:nth-of-type(2) h3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+main section:nth-of-type(2) p {
+  font-size: 14px;
+  font-style: italic;
+  color: #e0e0e0;
+}
+
+/* Responsive tweak */
+@media (max-width: 768px) {
+  main section:nth-of-type(2) {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  main section:nth-of-type(2) > div:first-child img {
+    margin-bottom: 20px;
+  }
+}
+
+
+
