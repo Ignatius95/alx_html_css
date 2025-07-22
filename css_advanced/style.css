@@ -333,3 +333,56 @@ section:nth-of-type(3) > div > p:last-of-type {
     background-color: #a552e6;
 }
 
+/*==================================FAQ==================================*/
+
+/* === FAQ Section Styling === */
+section:last-of-type {
+  padding: 60px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+section:last-of-type h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #000;
+  letter-spacing: 0.1em;
+  margin-bottom: 40px;
+}
+
+/* Container for the two-column layout */
+section:last-of-type > div {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+/* Individual column */
+section:last-of-type > div > div {
+  flex: 1;
+  min-width: 280px;
+  max-width: 500px;
+}
+
+/* Question */
+section:last-of-type h3 {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+/* Answer */
+section:last-of-type div > div > div:not(:has(h3)) {
+  color: #6c757d;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+
+
