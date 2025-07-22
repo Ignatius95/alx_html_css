@@ -264,4 +264,72 @@ section:nth-of-type(3) > div > p:last-of-type {
 }
 
 
+/*======================================Free Membership==============================*/
+
+/* Free Membership Section */
+.free-membership {
+    background-color: #071629;
+    padding: 60px 20px;
+    text-align: center;
+    color: white;
+}
+
+.free-membership h2 {
+    font-size: 2rem;
+    margin-bottom: 50px;
+    font-weight: 400;
+}
+
+.free-membership .highlight {
+    color: #C271FF;
+    font-weight: bold;
+}
+
+/* Benefits container */
+.free-membership .benefits {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+}
+
+/* Each benefit */
+.free-membership .benefit {
+    max-width: 200px;
+    text-align: center;
+}
+
+.free-membership .benefit img {
+    width: 40px;
+    margin-bottom: 15px;
+}
+
+.free-membership .benefit h3 {
+    color: white;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.free-membership .benefit p {
+    font-size: 0.85rem;
+    color: #a8a8a8;
+}
+
+/* Button styling */
+.register-btn {
+    background-color: #C271FF;
+    border: none;
+    padding: 12px 24px;
+    color: white;
+    font-weight: bold;
+    font-size: 0.9rem;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.register-btn:hover {
+    background-color: #a552e6;
+}
 
