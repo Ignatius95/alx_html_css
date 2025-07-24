@@ -1,58 +1,103 @@
-/* Reset margin and padding */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+/* Base layout styling (Flexbox structure) */
 
-/* Body is a vertical flex container */
 body {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
   font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f4f4f4;
+  color: #333;
 }
 
-/* Header and Footer */
-header,
-footer {
-  background-color: #ccc;
-  padding: 15px;
+header, footer {
+  background-color: #333;
+  color: white;
+  padding: 1em;
   text-align: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
-/* Main is a horizontal flex container */
+header ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+header li {
+  display: inline;
+}
+
+.logo {
+  font-size: 28px;
+  margin-right: 20px;
+}
+
+/* Flexbox layout */
 main {
   display: flex;
   flex-direction: row;
-  flex: auto;
+  padding: 20px;
 }
 
-/* Article and Aside scroll independently */
 article {
-  flex: 2;
-  padding: 15px;
-  background-color: #f2f2f2;
-  overflow-y: auto;
+  flex: 3;
+  background-color: white;
+  padding: 20px;
+  border-right: 2px solid #ccc;
 }
 
 aside {
   flex: 1;
-  padding: 15px;
-  background-color: #e6e6e6;
-  overflow-y: auto;
+  background-color: #e9e9e9;
+  padding: 20px;
+  border-left: 2px dashed #bbb;
 }
 
-/* Optional: basic responsive layout using media queries */
-@media screen and (max-width: 768px) {
+/* Article-specific styles */
+article h2 {
+  color: #1e90ff;
+  font-size: 28px;
+}
+
+article ul {
+  list-style-type: square;
+  padding-left: 20px;
+}
+
+article li {
+  margin-bottom: 8px;
+}
+
+article p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* Footer */
+footer p {
+  margin: 0;
+  font-size: 16px;
+}
+
+/* Responsive support */
+.works_on_smartphone {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+@media (max-width: 768px) {
   main {
     flex-direction: column;
   }
 
-  article,
-  aside {
-    flex: none;
-    width: 100%;
-    height: auto;
+  article, aside {
+    border: none;
+  }
+
+  header ul {
+    flex-direction: column;
+    gap: 10px;
   }
 }
